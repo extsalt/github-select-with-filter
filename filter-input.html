@@ -1,0 +1,61 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Document</title>
+    <link rel="stylesheet" href="primer.css">
+</head>
+<body>
+
+<div class="container-lg p4">
+    <div class="Box">
+        <div class="Box-body">
+            <details class="details-reset details-overlay">
+                <summary class="btn" aria-haspopup="true">
+                    <span data-menu-button>Choose</span>
+                    <span class="dropdown-caret"></span>
+                </summary>
+
+                <details-menu class="SelectMenu SelectMenu--hasFilter">
+                    <div class="SelectMenu-modal">
+                        <header class="SelectMenu-header">
+                            <h3 class="SelectMenu-title">Title</h3>
+                        </header>
+
+                        <filter-input aria-owns="robots">
+                            <div class="SelectMenu-filter">
+                                <input class="SelectMenu-input form-control" type="text" placeholder="Filter"
+                                       aria-label="Filter" autocomplete="off" autofocus>
+                            </div>
+                        </filter-input>
+
+                        <div id="robots">
+                            <div class="SelectMenu-list" data-filter-list>
+                                <button class="SelectMenu-item" role="menuitem" data-menu-button-text>Item 1</button>
+                                <button class="SelectMenu-item" role="menuitem" data-menu-button-text>Item 1</button>
+                                <button class="SelectMenu-item" role="menuitem" data-menu-button-text>Item 1</button>
+                                <button class="SelectMenu-item" role="menuitem" data-menu-button-text>Item 1</button>
+                                <button class="SelectMenu-item" role="menuitem" data-menu-button-text>Item 1</button>
+                                <button class="SelectMenu-item" role="menuitem" data-menu-button-text>Item 1</button>
+                                <button class="SelectMenu-item" role="menuitem" data-menu-button-text>Item 1</button>
+                                <button class="SelectMenu-item" role="menuitem" data-menu-button-text>Item 1</button>
+                                <button class="SelectMenu-item" role="menuitem" data-menu-button-text>Item 1</button>
+                                <button class="SelectMenu-item" role="menuitem" data-menu-button-text>Orange</button>
+                                <button class="SelectMenu-item" role="menuitem" data-menu-button-text>Apple</button>
+                            </div>
+
+                            <form action="/new" data-filter-new-item hidden>
+                                <a class="SelectMenu-item" data-filter-new-item-value>
+                                    Create robot "<span data-filter-new-item-text></span>"
+                                </a>
+                            </form>
+                        </div>
+                    </div>
+                </details-menu>
+            </details>
+        </div>
+    </div>
+</div>
+<script src="app.js"></script>
+</body>
+</html>
